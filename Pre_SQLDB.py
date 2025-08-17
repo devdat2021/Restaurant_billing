@@ -1,6 +1,6 @@
 import mysql.connector
 
-conn = mysql.connector.connect(host="localhost", user="root", password="devdat", charset="utf8") #change password and username accordingly
+conn = mysql.connector.connect(host="localhost", user="username", password="password", charset="utf8") #change password and username accordingly
 cursor = conn.cursor()
 cursor.execute("CREATE DATABASE IF NOT EXISTS resto")
 cursor.execute("USE resto")
@@ -38,4 +38,5 @@ except:
 
 conn.commit()
 conn.close()
+
 
