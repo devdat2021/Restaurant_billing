@@ -7,7 +7,7 @@ import mysql.connector as sqlc
 
 
 
-name='Devdat'
+name='Devdat' #change user infor here
 registry={}
 pass_word='error_password'
 
@@ -19,8 +19,8 @@ def connect():
     try:
         conn = sqlc.connect(
             host="localhost",
-            user="root",
-            password="devdat",
+            user="username",
+            password="password",
             database="resto",
             charset="utf8",
         )
