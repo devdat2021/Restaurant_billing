@@ -27,7 +27,7 @@ pre_menu='''insert into menu(id, ITEM, COST)  values
 (7,'Veg Nuggets', 75),
 (8,'Mushroom Salt and Pepper', 70),
 (9,'Veg Salad',100),
-(10,'Veg Pasta Salad',110);'''
+(10,'Veg Pasta Salad',110);'''   #update the default menu accordingly 
 try:
     cursor.execute(create_table_menu)
     cursor.execute(create_table_revenue)
@@ -38,5 +38,6 @@ except:
 
 conn.commit()
 conn.close()
+
 
 
